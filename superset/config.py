@@ -178,7 +178,16 @@ SUPERSET_DASHBOARD_PERIODICAL_REFRESH_WARNING_MESSAGE = None
 
 SUPERSET_DASHBOARD_POSITION_DATA_LIMIT = 65535
 CUSTOM_SECURITY_MANAGER = None
+
+# Any Flask-SQLAlchemy configuration options can be set
+# https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/
 SQLALCHEMY_TRACK_MODIFICATIONS = False
+# set to true to log all sql queries. 
+# SQLALCHEMY_ECHO=True
+# If setting SQLALCHEMY_ECHO True you can set this query_cache_size to 0 so if SQLALCHEMY_ECHO is true so that
+# generated queries are not cached and are always logged.
+# SQLALCHEMY_ENGINE_OPTIONS={"query_cache_size":0}
+
 # ---------------------------------------------------------
 
 # Your App secret key. Make sure you override it on superset_config.py.
